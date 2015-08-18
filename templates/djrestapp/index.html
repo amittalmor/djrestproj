@@ -1,0 +1,35 @@
+{% extends "djrestapp/base.html" %}
+{% block content %}
+<br><br>
+
+<!-- The User Form -->
+<div class="row white">
+    <div class="columns large-12">
+        <form method="POST" id="address-form">
+            {% csrf_token %}
+            <div class="fieldWrapper" id="address_country">
+                {{ form.country }}
+            </div>
+	    <div class="fieldWrapper" id="address_city">
+                {{ form.city }}
+            </div>
+            <div class="fieldWrapper" id="address_street">
+                {{ form.street }}
+            </div>
+            <div id="results"></div>
+            <input type="submit" value="Submit Address" class="tiny button">
+        </form>
+    </div>
+</div>
+
+<!-- The Map -->
+<br><br>
+<center>
+<div style="height:600px;width:600px; border: 1px solid pink;" id="map_canvas"></div>
+</center>
+<br><br>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js"></script>
+<script src="static/scripts/main.js"></script>
+{% endblock %}
