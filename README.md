@@ -34,6 +34,6 @@ pip install geopy
 
 * open you web browser and enter the following url:
 ```
-[http://localhost:8000] (http://localhost:8000)
+http://localhost:8000
 ```
 
