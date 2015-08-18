@@ -26,13 +26,14 @@ pip install geopy
 
 ## Usage
 * Download the code
-* cd <your projects folder>/djrestproj
+* cd .../djrestproj
 * run django on your local machine
 ```
 <your projects folder>/djrestproj$ python manage.py runserver
 ```
 
 * open you web browser and enter the following url:
+```
 [http://localhost:8000] (http://localhost:8000)
-
+```
 
